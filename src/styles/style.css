@@ -56,7 +56,7 @@ a {
     transform: scaleY(1.2);
     font-size: 4rem;
     text-transform: uppercase;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 .title a:hover {
     transform: scaleY(1.35);
