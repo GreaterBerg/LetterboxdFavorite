@@ -1,0 +1,91 @@
+@import url("https://s.ltrbxd.com/fonts/Graphik-Light-Web.woff");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap');
+:root {
+  --letterboxd-font: GraphikWeb, sans-serif;
+  --regular-font: "Inter", sans-serif;
+  --prata-font: "Prata", serif;
+
+  --primary-color: #b1454a;
+  --secondary-color: #121212;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --bg-letterboxd: #2C3440;
+  --color-letterboxd: #667788;
+  --light-color-letterboxd: #C8D4E0;
+
+  --color-white: #fff;
+  --color-creamson: #eee7de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: var(--color-letterboxd);
+  font-family: var(--regular-font);
+  font-weight: 900;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--bg-letterboxd);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 4rem;
+}
+.title a{
+    display: inline-block;
+    transform: scaleY(1.2);
+    font-size: 4rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+}
+.title a:hover {
+    transform: scaleY(1.35);
+    font-size: 4.1rem;
+    font-family: var(--regular-font);
+    color: var(--light-color-letterboxd);
+}
+
+body:has(.goodfellas:hover) {
+    background: url('/public/goodfellas.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+}
+body:has(.heightful:hover) {
+    background: url('/public/hatefuleight.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+}
+body:has(.cars:hover) {
+    background: url('/public/cars.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+}
+body:has(.deadpoets:hover) {
+    background: url('/public/deadpoets.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+}
